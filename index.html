@@ -1,63 +1,91 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wweb Studio | Criação de Sites Profissionais</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+  <title>WsStudio | Criação de Sites</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black text-white">
-  <!-- Navbar -->
-  <header class="w-full fixed top-0 bg-black/90 backdrop-blur-lg shadow-md z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold text-purple-500">Wweb Studio</h1>
-      <nav class="space-x-6 hidden md:flex">
-        <a href="#sobre" class="hover:text-purple-400">Sobre</a>
-        <a href="#servicos" class="hover:text-purple-400">Serviços</a>
-        <a href="#contato" class="hover:text-purple-400">Contato</a>
-      </nav>
-      <a href="tel:79998954178" class="md:block hidden bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg">Ligar</a>
+<body>
+
+<header>
+  <div class="logo">Ws<span>Studio</span></div>
+
+  <nav id="menu">
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="menu-btn" id="menuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section id="inicio" class="hero fade">
+  <h1>Sites profissionais para quem quer crescer</h1>
+  <p>Criamos sites modernos, rápidos e focados em conversão. Design limpo, profissional e pensado para gerar resultados.</p>
+  <a class="btn" href="https://wa.me/5579998954178" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+  </a>
+</section>
+
+<section id="servicos" class="fade">
+  <h2>O que fazemos</h2>
+
+  <div class="cards">
+    <div class="card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Criação de Sites</h3>
+      <p>Sites institucionais e landing pages com visual profissional e alta credibilidade.</p>
     </div>
-  </header>  <!-- Hero -->  <section class="h-screen flex items-center justify-center text-center px-6 bg-gradient-to-b from-black to-gray-900">
-    <div>
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Criação de Sites Profissionais</h2>
-      <p class="text-lg md:text-xl text-gray-300 mb-6">Transforme sua presença online com design moderno e performance de alto nível.</p>
-      <a href="#contato" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white font-semibold">Fale Conosco</a>
+
+    <div class="card">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <h3>Responsividade</h3>
+      <p>Seu site perfeito em celular, tablet e computador.</p>
     </div>
-  </section>  <!-- Sobre -->  <section id="sobre" class="py-20 px-6 max-w-6xl mx-auto">
-    <h3 class="text-3xl font-bold text-purple-500 mb-6">Sobre Nós</h3>
-    <p class="text-gray-300 leading-relaxed text-lg">
-      A <strong>Wweb Studio</strong> é especializada na criação de sites modernos, responsivos e otimizados para performance.
-      Nosso foco é ajudar empresas e empreendedores a construírem uma presença digital de impacto, com design exclusivo e estratégias que geram resultados.
-    </p>
-  </section>  <!-- Serviços -->  <section id="servicos" class="py-20 px-6 bg-gray-900">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="text-3xl font-bold text-purple-500 mb-10">Nossos Serviços</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-black rounded-2xl p-6 shadow-lg border border-gray-800 hover:border-purple-600 transition">
-          <h4 class="text-xl font-semibold mb-4">Sites Profissionais</h4>
-          <p class="text-gray-400">Criação de sites personalizados, responsivos e com design exclusivo para sua marca.</p>
-        </div>
-        <div class="bg-black rounded-2xl p-6 shadow-lg border border-gray-800 hover:border-purple-600 transition">
-          <h4 class="text-xl font-semibold mb-4">Landing Pages</h4>
-          <p class="text-gray-400">Páginas otimizadas para conversão, ideais para campanhas e lançamentos.</p>
-        </div>
-        <div class="bg-black rounded-2xl p-6 shadow-lg border border-gray-800 hover:border-purple-600 transition">
-          <h4 class="text-xl font-semibold mb-4">Consultoria Digital</h4>
-          <p class="text-gray-400">Orientação estratégica para posicionar sua empresa no ambiente online.</p>
-        </div>
-      </div>
+
+    <div class="card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Foco em Resultados</h3>
+      <p>Layout pensado para gerar contatos, vendas e autoridade.</p>
     </div>
-  </section>  <!-- Contato -->  <section id="contato" class="py-20 px-6 max-w-6xl mx-auto text-center">
-    <h3 class="text-3xl font-bold text-purple-500 mb-6">Entre em Contato</h3>
-    <p class="text-gray-300 mb-6">Pronto para dar o próximo passo? Fale com a gente agora mesmo.</p>
-    <a href="https://wa.me/5579998954178" target="_blank" class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg text-white font-semibold inline-block mb-4">WhatsApp</a>
-    <p class="text-gray-400">Ou ligue: <a href="tel:79998954178" class="text-purple-400 hover:underline">(79) 99895-4178</a></p>
-  </section>  <!-- Footer -->  <footer class="bg-black py-8 text-center text-gray-500 text-sm">
-    <p>© 2025 Wweb Studio. Todos os direitos reservados.</p>
-  </footer>
+  </div>
+</section>
+
+<section id="sobre" class="fade">
+  <h2>Sobre a WsStudio</h2>
+  <p>
+    A WsStudio é um estúdio digital focado na criação de sites modernos e profissionais.
+    Mesmo sem portfólio público no momento, trabalhamos com padrão elevado, organização,
+    estratégia e atenção total ao cliente.
+  </p>
+</section>
+
+<section id="contato" class="fade">
+  <h2>Vamos tirar sua ideia do papel?</h2>
+  <p>Entre em contato agora e tenha um site que represente o seu negócio de verdade.</p>
+
+  <a class="btn" href="https://wa.me/5579998954178" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2025 WsStudio — Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
